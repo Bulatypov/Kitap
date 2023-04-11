@@ -1,0 +1,254 @@
+.book_add_container{
+    margin-top: 3em;
+    background: #ffffff;
+    border: 8px solid #feb386;
+    border-radius: 18px;
+    border-style: double;
+    padding: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+h3{
+    font-size: 2rem;
+    line-height: 1.5em;
+    font-family: 'Montserrat Alternates Bold';
+    text-align: center;
+    color: #ce7900;
+}
+.book_cover {
+    height: 30em;
+	text-align: center;
+    padding: 2em;
+	outline: 2px dashed darkorange;
+    outline-offset: -12px;
+	background-color: #FFF8E7;
+	font-family: 'Montserrat Alternates Bold';
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.book_cover:hover{
+   outline: 3px dashed darkorange;
+}
+.book_cover_icon {
+    padding-top: 40%;
+    width: 10em; 
+}
+input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+.book_add_container label{
+	font-weight: bold;
+    font-family: 'Montserrat Alternates Bold';
+    font-size: 1rem;
+    color: #ce7900;
+}
+.book_cover label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.book_text label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.book_add_container input[type=text]{
+    border: 1px solid darkorange;
+    background: #FFF8E7;
+    border-radius: 12px;
+    width: 100%;
+    height: 2em;
+}
+.book_add_container input[type=text]:hover{
+    border: 1.5px solid darkorange;
+}
+.book_add_container input[type=text]:focus{
+    border: 2px solid darkorange;
+    outline: none;
+}
+
+
+.book_add_container textarea[type=text]{
+    border: 1px solid darkorange;
+    background: #FFF8E7;
+    border-radius: 12px;
+    width: 100%;
+    height: 17em;
+}
+.book_add_container textarea[type=text]:hover{
+    border: 1.5px solid darkorange;
+}
+.book_add_container textarea[type=text]:focus{
+    border: 2px solid darkorange;
+    outline: none;
+}
+
+
+
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #fff8e7;
+  border: 1px solid darkorange;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+    color: #ce7900;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #fff8e7;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+
+
+
+
+.book_text {
+    padding: 2em;
+    justify-content: center;
+    margin-top: 2em;
+	text-align: center;
+	outline: 2px dashed darkorange;
+    outline-offset: -12px;
+	background-color: #FFF8E7;
+	font-family: 'Montserrat Alternates Bold';
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.book_text:hover{
+   outline: 3px dashed darkorange;
+}
+.book_text_icon {
+    width: 4em; 
+}
+
+.button_enter {
+  font-family: 'Montserrat Alternates Bold';
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: #ffb43d;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+  border-radius: 12px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1300px){
+   .form-inline {
+    display: none;
+}
+}
+@media (max-width:1200px){
+   .form-inline {
+    display: block;
+}
+    .nav-item{
+        margin-bottom: 1em;
+    }
+    .nav-item:after {
+  content: "";
+}
+    .form-control{
+        width: 80%;
+    }
+    .tat{
+        margin-left: -2em;
+    }
+    .languages{
+        margin-top: 1em;
+    }
+    .btn{
+        margin-bottom: 0.3em;
+    }
+    .navbar-toggler{
+        outline: none;
+    }
+    .monument_img{
+        display: none;
+    }
+    .featurette-heading{
+        margin-top: 10%;   
+    }
+}                             

@@ -1,0 +1,352 @@
+h1, h2, h3, h4, h5, h6, p, li, a{
+    font-family: 'Montserrat Alternates Bold';
+}
+/* 1. Enable smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main > .container-fluid > .row > .col-md-3 >nav {
+	position: sticky;
+	top: 4.9rem;
+	align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+    margin-left: 1em;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+	padding: 0.5em;
+	border-radius: 18px;
+     border: 8px solid #feb386;
+    border-style: double;
+    background-color: white;
+}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: 0.4em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #B15124;
+	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+	color: #666;
+}
+
+
+
+.section-nav ul, .section-nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.section-nav li {
+	margin-left: 1rem;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+/** page layout **/
+main {
+	display: flex;
+	
+}
+
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+section {
+	margin-bottom: 3em;
+}
+section:first-child {
+	margin-bottom: 0em;
+}
+
+.section_nav_title{
+    padding: 1em;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+    letter-spacing: 2px;
+    color: #4E1609;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  /* Webkit */
+  width: 0;
+  height: 0;
+}
+.hs__wrapper{
+    background-color: #fff;
+    border-radius: 18px;
+    padding: 1em;
+    border: 8px solid #feb386;
+    border-style: double;
+}
+.hs {
+  display: -webkit-box;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -20px;
+}
+.hs__header {
+  color: #4E1609;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.hs__headline {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+.hs__arrows {
+  align-self: center;
+}
+.hs__arrows .arrow img {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  background-size: contain;
+  -webkit-filter: brightness(5);
+          filter: brightness(5);
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+
+}
+.hs__arrows .arrow.disabled img {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+.hs__arrows .arrow.arrow-prev img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+            margin-right: 10px;
+}
+.hs__arrows .arrow.arrow-next img {
+}
+.hs__item {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: calc(100% / 7 - (10px * 2) - (20px / 7));
+  margin: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media only screen and (max-width: 990px) {
+  .hs__item {
+    flex-basis: calc(100% / 3 - (10px * 2) - (20px / 3));
+  }
+}
+.hs__item:last-child:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  right: calc(10px * 2 * -1);
+}
+.hs__item:first-child {
+  margin-left: calc(10px * 2);
+}
+.hs__item__description {
+  z-index: 1;
+  align-self: flex-start;
+    margin-top: 1em;
+    height: auto;
+}
+.hs__item__title{
+    font-size: 0.9rem;
+}
+.hs__item__subtitle {
+  color: #aaa;
+  display: block;
+    font-size: 0.8rem;
+}
+.hs__item__image__wrapper {
+   width: 11em;
+  height: 15em;
+}
+.hs__item__image {
+  pointer-events: none;
+    padding: 0.1em;
+ width: 11em;
+  height: 15em;
+    border-radius: 8px;
+    box-shadow: 0.3vw 0vw 0.5vw rgba(0, 0, 3, 1);
+}
+
+
+
+
+
+
+.read_online-button {
+float: right;
+  height: 50px;
+  display: inline-block;
+  border: 3px solid #feb386;
+  border-radius: 0.3125rem;
+  font-family: 'Montserrat Alternates Bold';
+  font-size: 1rem;
+  text-align: center;
+  color: #feb386;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+    margin-top: 0.5em;
+}
+.read_online-button:hover{
+    text-decoration: none;
+}
+.read_online-button .face-primary,
+.read_online-button .face-secondary {
+  display: block;
+  padding: 0 32px;
+  line-height: 50px;
+  transition: margin .4s;
+}
+.read_online-button .face-primary {
+  background-color: #feb386;
+  color: #fff;
+}
+.read_online-button .face-secondary {
+  background-color: #fff;
+  color: #feb386;
+  text-decoration: none;
+}
+.read_online-button:hover .face-primary {
+  margin-top: -50px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 990px) {
+  .hs__wrapper {
+    overflow: hidden;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .hs__wrapper .hs__arrows {
+    display: none;
+  }
+  .hs__wrapper .hs__item {
+    -webkit-box-flex: 1;
+            flex: 1 0 calc(23% - 10px * 2);
+  }
+}
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 990px) {
+  .hs__wrapper .hs__item {
+    -webkit-box-flex: 1;
+            flex: 1 0 calc(45% - 10px * 2);
+  }
+}
+
+
+@media (max-width:1200px){
+    section:first-child {
+	padding-top: 2em;
+}
+}
+
+@media (max-width:800px){
+    .section-nav{
+        display: none;
+    }
+}

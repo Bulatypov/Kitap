@@ -1,0 +1,7 @@
+<?php
+$mysql_name = 'id14249797_irek';
+$mysql_host = 'localhost';
+$mysql_pass = 'guY^qKG78NARRfSP&b(O';
+$mysql_db = 'id14249797_kitap';
+$mysqli = new mysqli($mysql_host, $mysql_name, $mysql_pass, $mysql_db);
+?>

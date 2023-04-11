@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6{
+     font-family: 'Montserrat Alternates Bold';
+}
+.diploma{
+    border-radius: 8px;
+}
+mark.red {
+    color:#f88f1f;
+    background: #ffffff;
+    border-radius: 2px;
+}
+.team_item{
+    padding-bottom: 2em; 
+}
+.diploma1{
+    max-width: 32em; 
+    text-align: jusify;
+    float: left; 
+    padding: 1em;
+}
+
+
+
+
+@media (max-width:1300px){
+   .form-inline {
+    display: none;
+}
+}
+@media (max-width:1200px){
+   .form-inline {
+    display: block;
+}
+    .nav-item{
+        margin-bottom: 1em;
+    }
+    .nav-item:after {
+  content: "";
+}
+    .form-control{
+        width: 80%;
+    }
+    .tat{
+        margin-left: -2em;
+    }
+    .languages{
+        margin-top: 1em;
+    }
+    .btn{
+        margin-bottom: 0.3em;
+    }
+    .navbar-toggler{
+        outline: none;
+    }
+    .monument_img{
+        display: none;
+    }
+    .featurette-heading{
+        margin-top: 10%;   
+    }
+    .diploma1{
+        max-width: 100%;
+    }
+}
+                                     

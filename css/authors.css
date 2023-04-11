@@ -1,0 +1,122 @@
+.carousel{
+    margin-top: 2%;
+    background-color: white;
+    border: 8px solid #feb386;
+    border-radius: 18px;
+    border-style: double;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+    margin-top: 2%;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+    margin-bottom: 5%;
+}
+
+.car_head{
+    font-size: 30px;
+    font-family: 'Montserrat Alternates Bold';
+    text-align: center;
+}
+.car_head_describe{
+    font-size: 20px;
+    font-family: 'Montserrat Alternates Bold';
+    text-align: center;
+    color: darkgray;
+}
+.author_car{
+    width: 100%;
+    height: 370px;
+    border-radius: 18px;
+    box-shadow: 0.45vw 0.45vw 0.6vw rgba(0, 0, 3, 1);
+}
+.asd{
+    font-family: 'Montserrat Alternates Bold';
+    text-align: justify;
+    text-decoration: underline;
+}
+.name_author{
+    font-family: 'Montserrat Alternates Bold';
+    text-align: justify;
+}
+.carousel-item p{
+    font-family: 'Montserrat Alternates Bold';
+    text-align: justify;
+    color: #363636;
+    font-size: 1rem;
+}
+.years_author{
+    font-family: 'Montserrat Alternates Bold';
+    color: darkgray;
+}
+.read_more{
+    float: right;
+    height: 60%;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    }
+}
+
+@media (max-width:1300px){
+   .form-inline {
+    display: none;
+}
+}
+@media (max-width:1200px){
+   .form-inline {
+    display: block;
+}
+    .nav-item{
+        margin-bottom: 1em;
+    }
+    .nav-item:after {
+  content: "";
+}
+    .form-control{
+        width: 80%;
+    }
+    .tat{
+        margin-left: -2em;
+    }
+    .languages{
+        margin-top: 1em;
+    }
+    .btn{
+        margin-bottom: 0.3em;
+    }
+    .navbar-toggler{
+        outline: none;
+    }
+    .monument_img{
+        display: none;
+    }
+    .featurette-heading{
+        margin-top: 10%;   
+    }

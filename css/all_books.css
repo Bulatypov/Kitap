@@ -1,0 +1,30 @@
+h2{
+    color: #4E1609;
+}
+
+
+.hs__item{
+    margin: 1em; 
+}
+.hs__item__description {
+    z-index: 1;
+    align-self: flex-start;
+    margin-top: 1em;
+}
+.hs__item__subtitle {
+  color: #aaa;
+  display: block;
+  font-size: 0.9rem;
+}
+.hs__item__title{
+    font-size: 1.1rem;
+}
+.hs__item__image__wrapper {
+   height: 20em;
+}
+.hs__item__image {
+    padding: 0.1em; 
+    height: 20em;
+    border-radius: 8px;
+    box-shadow: 0.3vw 0vw 0.5vw rgba(0, 0, 3, 1);
+}
